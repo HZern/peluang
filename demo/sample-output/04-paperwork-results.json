@@ -1,0 +1,235 @@
+{
+  "paperwork_run": {
+    "run_date": "2026-10-11",
+    "business_name": "Lina's Bakery Sdn. Bhd.",
+    "input_profile": "01-profiler-results.json",
+    "input_rules": "02-rule-checker-results.json",
+    "input_matcher": "03-matcher-results.json"
+  },
+  "measures": [
+    {
+      "measure_id": "M1",
+      "measure_name": "Geran Digital PMKS MADANI",
+      "status": "needs_info",
+      "form_or_application_link": "https://fundingsocieties.com.my/msme-digital-grant-madani#application-form",
+      "required_documents": [
+        "Copy of IC or passport of owner / director (Nur Lina binti Hassan)",
+        "Copy of SSM business registration (Companies Act 2016)",
+        "Latest management accounts OR bank statements for the last 2 months (any one)",
+        "Quote or invoice from an appointed service provider (pembekal perkhidmatan yang dilantik)",
+        "Any other documents required by BSN"
+      ],
+      "documents_the_business_already_has": [
+        "SSM Company Profile (registration no. 202301009876 / 1504321-T, incorporated 14 March 2023)",
+        "Management Accounts FY2025 (unaudited — revenue RM824,300, PBT RM93,500)",
+        "Bank statement for August 2026 (Bank Seri Murni Berhad, closing balance RM66,970.34)",
+        "Quotation from KedaiDigital Solutions Sdn. Bhd. (QT-2026-0917, dated 2026-09-18, total RM8,000)"
+      ],
+      "documents_still_needed": [
+        "Copy of IC of director (Nur Lina binti Hassan) — owner will provide directly when applying",
+        "Bank statement for September 2026 — needed only if using bank statements instead of management accounts as the financial proof document (management accounts already satisfy this requirement, so this is optional)",
+        "Confirmation that KedaiDigital Solutions Sdn. Bhd. is on the BSN/MDEC appointed service provider list for the GDPM scheme — must be verified before applying"
+      ],
+      "pre_filled_form_answers": {
+        "business_name": "Lina's Bakery Sdn. Bhd.",
+        "registration_number": "202301009876 (1504321-T)",
+        "entity_type": "Sdn. Bhd. (Private company limited by shares)",
+        "registered_address": "Suite 3-07, Wisma Prima, 15 Jalan Kenari 4, 47100 Puchong, Selangor",
+        "business_address": "No. 18G, Jalan Harmoni 3/2, Taman Harmoni, 47300 Petaling Jaya, Selangor",
+        "business_sector": "Food & Beverage",
+        "nature_of_business": "Manufacturing and retail of bread, cakes and pastries; catering of baked goods",
+        "paid_up_capital_myr": 100000,
+        "ownership_malaysian_pct": 100,
+        "number_of_employees": 8,
+        "average_annual_sales_myr": 824300,
+        "date_incorporated": "2023-03-14",
+        "operating_period_months": 43,
+        "contact_person": "Nur Lina binti Hassan (Director, 70% shareholder)",
+        "shareholders": "Nur Lina binti Hassan (70%, Malaysian), Ahmad Faiz bin Rahman (30%, Malaysian)",
+        "company_secretary": "Prima Corporate Services Sdn. Bhd.",
+        "quotation_provider": "KedaiDigital Solutions Sdn. Bhd.",
+        "quotation_number": "QT-2026-0917",
+        "quotation_amount_myr": 8000,
+        "quotation_line_items": "Online ordering website (RM4,800), E-invoicing module (RM2,400), One-time setup (RM800)"
+      },
+      "open_questions_for_owner": [
+        "Did the business (or either shareholder on behalf of the business) previously receive any digitalisation matching grant (Geran Padanan Pendigitalan), including during the COVID period? Lina previously stated she was unsure and needed to check. If no prior grant was received, the full RM8,000 quotation is eligible (grant covers up to RM5,000, estimated RM4,000 at 50% match). If a prior grant was received, only the e-invoicing module (RM2,400) is eligible (grant covers RM1,200)."
+      ]
+    },
+    {
+      "measure_id": "M3",
+      "measure_name": "SME income tax rates",
+      "status": "eligible",
+      "form_or_application_link": "https://www.hasil.gov.my/en/syarikat/kadar-cukai-syarikat/",
+      "required_documents": [
+        "Annual tax return filed under self-assessment with LHDN"
+      ],
+      "documents_the_business_already_has": [
+        "SSM Company Profile (confirming Sdn. Bhd. status, paid-up capital RM100,000)",
+        "Management Accounts FY2025 (revenue RM824,300, PBT RM93,500)",
+        "Bank statement August 2026 (supporting business activity)",
+        "Payroll Summary August 2026 (supporting employee costs)"
+      ],
+      "documents_still_needed": [],
+      "pre_filled_form_answers": {
+        "business_name": "Lina's Bakery Sdn. Bhd.",
+        "registration_number": "202301009876 (1504321-T)",
+        "entity_type": "Company (Sdn. Bhd.)",
+        "paid_up_capital_myr": 100000,
+        "gross_business_income_myr": 824300,
+        "sme_criteria_met": "Yes — paid-up capital RM100,000 (under RM2.5m) and gross income RM824,300 (under RM50m)",
+        "applicable_tax_rates": "15% on first RM150,000 of chargeable income; 17% on RM150,001–RM600,000; 24% on balance above RM600,000",
+        "year_of_assessment": 2026,
+        "accountant": "LK Tan & Associates"
+      },
+      "open_questions_for_owner": []
+    },
+    {
+      "measure_id": "M4",
+      "measure_name": "E-invoicing special deduction",
+      "status": "eligible",
+      "form_or_application_link": null,
+      "required_documents": [
+        "Annual tax return claiming the deduction",
+        "Supporting documentation of e-invoicing / ESG implementation expenses (invoices, receipts)"
+      ],
+      "documents_the_business_already_has": [
+        "Quotation from KedaiDigital Solutions Sdn. Bhd. (QT-2026-0917) showing e-invoicing module at RM2,400 for 12-month subscription"
+      ],
+      "documents_still_needed": [
+        "Actual invoice/receipt from KedaiDigital after the e-invoicing module is implemented and paid for — the quotation alone is not sufficient for tax filing; a paid tax invoice is needed",
+        "Any other ESG-related expense receipts if claiming additional deductions beyond e-invoicing"
+      ],
+      "pre_filled_form_answers": {
+        "business_name": "Lina's Bakery Sdn. Bhd.",
+        "registration_number": "202301009876 (1504321-T)",
+        "msme_status": "Small enterprise (services sector): annual sales RM824,300, 8 employees",
+        "eligible_ya_period": "2024–2027 (current: YA 2026)",
+        "e_invoicing_cost_from_quotation_myr": 2400,
+        "maximum_deduction_per_year_myr": 50000,
+        "estimated_tax_savings_myr": 360,
+        "accountant": "LK Tan & Associates"
+      },
+      "open_questions_for_owner": []
+    },
+    {
+      "measure_id": "M5",
+      "measure_name": "Stamp duty exemption on employment contracts",
+      "status": "eligible",
+      "form_or_application_link": null,
+      "required_documents": [
+        "Employment contract submitted for stamping with LHDN"
+      ],
+      "documents_the_business_already_has": [
+        "Payroll Summary August 2026 (showing 3 employees at or below RM3,000/month: Nurul Izzah RM2,000, Chong Wei Jie RM1,900, Aisyah RM1,800)",
+        "Employee details for the 2 planned new hires from November 2026 at approximately RM1,900/month each"
+      ],
+      "documents_still_needed": [
+        "New employment contracts for the 2 planned hires (November 2026) — must be dated on or after 1 January 2026 and submitted to LHDN for stamping",
+        "Consultation with LK Tan & Associates or LHDN on whether the 3 existing qualifying employees' contracts (signed before 2026) can still be stamped under the exemption"
+      ],
+      "pre_filled_form_answers": {
+        "business_name": "Lina's Bakery Sdn. Bhd.",
+        "registration_number": "202301009876 (1504321-T)",
+        "exemption_threshold": "RM3,000/month salary (raised from RM300 in Budget 2026)",
+        "effective_date": "1 January 2026",
+        "qualifying_existing_employees": [
+          "E005 — Nurul Izzah binti Ahmad, Cashier, RM2,000/month (joined 2023-06-01)",
+          "E006 — Chong Wei Jie, Front Counter, RM1,900/month (joined 2024-07-15)",
+          "E007 — Aisyah binti Rosli, Kitchen Assistant, RM1,800/month (joined 2025-03-03)"
+        ],
+        "planned_new_hires": "2 front counter/online order staff from November 2026 at approximately RM1,900/month each",
+        "stamp_duty_per_contract_myr": 10,
+        "estimated_savings_myr": 20
+      },
+      "open_questions_for_owner": []
+    },
+    {
+      "measure_id": "M6",
+      "measure_name": "GGSM4 financing guarantee",
+      "status": "needs_info",
+      "form_or_application_link": "https://rakyathub.my/cara-mohon-sjpp-jaminan-pembiayaan-2026",
+      "required_documents": [
+        "SSM registration",
+        "1–2 years financial statements",
+        "6–12 months bank statements",
+        "Proof of business income"
+      ],
+      "documents_the_business_already_has": [
+        "SSM Company Profile (registration no. 202301009876 / 1504321-T)",
+        "Management Accounts FY2025 (revenue RM824,300, PBT RM93,500, total assets RM188,900)",
+        "Bank statement for August 2026 (Bank Seri Murni Berhad)",
+        "Payroll Summary August 2026 (proof of employee costs)"
+      ],
+      "documents_still_needed": [
+        "FY2024 financial statements (if available) — GGSM4 requires 1–2 years of financials; only FY2025 management accounts are currently on file",
+        "Bank statements for 6–12 months (currently only August 2026 available — need to gather September 2026 and several preceding months)",
+        "Proof of Halal certification (if the business holds one) — would qualify the business under the 'Halal' focus sector",
+        "Proof of Bumiputera status of shareholders (IC copies) — would qualify under the 'Bumiputera' focus sector; owner will provide IC copies directly when applying"
+      ],
+      "pre_filled_form_answers": {
+        "business_name": "Lina's Bakery Sdn. Bhd.",
+        "registration_number": "202301009876 (1504321-T)",
+        "entity_type": "Company (Sdn. Bhd.) — not subject to sole proprietorship RM1m cap",
+        "registered_address": "Suite 3-07, Wisma Prima, 15 Jalan Kenari 4, 47100 Puchong, Selangor",
+        "business_address": "No. 18G, Jalan Harmoni 3/2, Taman Harmoni, 47300 Petaling Jaya, Selangor",
+        "business_sector": "Food & Beverage",
+        "ownership_malaysian_pct": 100,
+        "paid_up_capital_myr": 100000,
+        "annual_sales_myr": 824300,
+        "number_of_employees": 8,
+        "sme_classification": "SME (PMKS) — services sector",
+        "guarantee_max_amount_myr": 20000000,
+        "guarantee_coverage_pct": 80,
+        "guarantee_fee_pa": "0.75% per annum (minimum RM500)",
+        "intended_purpose": "Working capital and capital expenditure (planned second deck oven ~RM45,000)",
+        "application_deadline": "31 December 2026 or until allocation is fully utilised",
+        "participating_banks": "22 financial institutions participate — apply through the bank, not directly to SJPP"
+      },
+      "open_questions_for_owner": [
+        "Does the bakery hold a Halal certificate (from JAKIM or a recognised Halal certification body)? If yes, the business qualifies under the 'Halal' focus sector for the GGSM4 guarantee.",
+        "Are either of the two shareholders (Nur Lina binti Hassan or Ahmad Faiz bin Rahman) of Bumiputera status? If yes, the business qualifies under the 'Bumiputera' focus sector for the GGSM4 guarantee. IC copies should be provided directly to the bank when applying — do not send by email."
+      ]
+    },
+    {
+      "measure_id": "2027-a",
+      "measure_name": "Budget 2027 MSME tax cut",
+      "status": "eligible",
+      "form_or_application_link": null,
+      "required_documents": [
+        "Annual tax return filed under self-assessment with LHDN (reduced rates applied automatically based on SME status)"
+      ],
+      "documents_the_business_already_has": [
+        "SSM Company Profile (confirming SME status: paid-up capital RM100,000 under RM2.5m)",
+        "Management Accounts FY2025 (gross income RM824,300 under RM50m)"
+      ],
+      "documents_still_needed": [],
+      "pre_filled_form_answers": {
+        "business_name": "Lina's Bakery Sdn. Bhd.",
+        "registration_number": "202301009876 (1504321-T)",
+        "sme_criteria_met": "Yes — paid-up capital RM100,000 (under RM2.5m) and gross income RM824,300 (under RM50m)",
+        "current_rates_ya2026": "15% on first RM150,000; 17% on RM150,001–RM600,000; 24% above RM600,000",
+        "reduced_rates_ya2027": "14% on first RM150,000; 16% on RM150,001–RM600,000; 24% above RM600,000 (unchanged)",
+        "estimated_savings_yr_myr": 935,
+        "effective_date": "Expected YA 2027 (not yet in force — announced 9 October 2026, implementation details pending from LHDN/MOF)",
+        "accountant": "LK Tan & Associates"
+      },
+      "open_questions_for_owner": []
+    }
+  ],
+  "summary": {
+    "total_measures_in_paperwork": 6,
+    "eligible_measures": ["M3", "M4", "M5", "2027-a"],
+    "needs_info_measures": ["M1", "M6"],
+    "measures_not_included": [
+      {"measure_id": "M2", "measure_name": "Geran Digital Penjaja MADANI", "reason": "Not eligible — business is a registered company, not a street vendor (penjaja)"},
+      {"measure_id": "2027-b", "measure_name": "Budget 2027 minimum wage rise", "reason": "Not eligible (exempt) — business is an MSME with annual sales below RM50 million"}
+    ],
+    "open_questions_count": 3,
+    "open_questions_summary": [
+      "Previous digitalisation grant status (affects M1 — Geran Digital PMKS MADANI eligibility and grant amount)",
+      "Halal certification status (affects M6 — GGSM4 financing guarantee focus sector qualification)",
+      "Bumiputera status of shareholders (affects M6 — GGSM4 financing guarantee focus sector qualification)"
+    ]
+  }
+}

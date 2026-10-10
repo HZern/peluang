@@ -1,0 +1,237 @@
+{
+  "expert": "Checker",
+  "ts": "2026-10-11T03:30:00+08:00",
+  "rechecked_ts": "2026-10-11T05:15:00+08:00",
+  "recheck_round": 2,
+  "inputs": [
+    "01-profiler-results.json",
+    "02-rule-checker-results.json",
+    "03-matcher-results.json (UPDATED with owner answers)",
+    "04-paperwork-results.json (FIXED)",
+    "04a-owner-answers.json",
+    "rules.json",
+    "Application_Pack.md (FIXED)"
+  ],
+  "recalculations": {
+    "method": "Python script executed via python3 (Bash tool)",
+    "results": {
+      "M3_sme_tax_savings": {
+        "pbt": 93500,
+        "tax_at_24pct": 22440.0,
+        "tax_at_15pct": 14025.0,
+        "savings": 8415.0,
+        "note": "CORRECT. 0.24 x 93,500 = 22,440; 0.15 x 93,500 = 14,025; savings = 22,440 - 14,025 = 8,415. Application_Pack.md now shows RM22,440, RM14,025, and RM8,415. Previous values (RM22,400, RM8,375) have been removed."
+      },
+      "M4_einvoicing_deduction": {
+        "cost": 2400,
+        "tax_deduction_at_15pct": 360.0,
+        "full_esg_at_15pct": 1200.0,
+        "note": "CORRECT. 0.15 x 2,400 = 360; 0.15 x 8,000 = 1,200. Matches Application_Pack."
+      },
+      "M1_grant_amount": {
+        "quotation": 8000,
+        "grant_at_50pct": 4000.0,
+        "co_pay": 4000.0,
+        "note": "CORRECT. 0.50 x 8,000 = 4,000. Full grant (owner confirmed no prev digital grant). Matches Application_Pack."
+      },
+      "M2027a_tax_rate_cut": {
+        "pbt": 93500,
+        "savings_at_1pp": 935.0,
+        "note": "CORRECT. 0.01 x 93,500 = 935. Matches Application_Pack."
+      },
+      "M6_guarantee": {
+        "oven_cost": 45000,
+        "guarantee_at_80pct": 36000.0,
+        "fee_at_0_75pct": 270.0,
+        "fee_minimum_per_rules": 500,
+        "fee_actual": 500,
+        "note": "CORRECT. 0.80 x 45,000 = 36,000. Fee = max(0.0075 x 36,000, 500) = max(270, 500) = 500. Application_Pack now says 'RM500/year' with note about minimum. Previous '~RM270/year' removed."
+      },
+      "immediate_annual_benefit": {
+        "low": 8775.0,
+        "high": 9615.0,
+        "note": "CORRECT. Low = 8,415 + 360 = 8,775. High = 8,415 + 1,200 = 9,615. Application_Pack now shows ~RM8,775-RM9,615/year. Previous ~RM8,735-RM9,575 removed."
+      }
+    }
+  },
+  "fixes_applied": [
+    {
+      "fix_id": 1,
+      "issue": "M3 savings: RM8,375 -> RM8,415 (and 24% tax RM22,400 -> RM22,440)",
+      "checks_affected": [7, 25],
+      "status": "verified_fixed",
+      "verification": "Python: 0.24 x 93,500 = 22,440 (not 22,400); 22,440 - 14,025 = 8,415 (not 8,375). Application_Pack.md line 66 now says 'RM22,440'. Line 68 now says '~RM8,415'. Line 219 now says '~RM8,775-RM9,615/year'. 04-paperwork-results.json M3 benefit now says 'saves ~RM8,415/yr'. Old values (RM22,400, RM8,375, RM8,735, RM9,575) confirmed absent from Application_Pack.md."
+    },
+    {
+      "fix_id": 2,
+      "issue": "M6 guarantee fee: ~RM270 -> RM500 (minimum per rules.json)",
+      "checks_affected": [7, 24],
+      "status": "verified_fixed",
+      "verification": "Python: fee = max(0.0075 x 36,000, 500) = max(270, 500) = 500. Application_Pack.md line 158 now says 'RM500/year'. '~RM270/year' confirmed absent from Application_Pack.md. rules.json how_to_claim states 'minimum RM500'."
+    },
+    {
+      "fix_id": 3,
+      "issue": "M1 notes: updated to reflect owner confirmed no previous digital grant",
+      "checks_affected": [21],
+      "status": "verified_fixed",
+      "verification": "Application_Pack.md line 53 now reads: 'Owner confirmed: Lina's Bakery has NEVER received any digital grant. The COVID cash aid in 2021 was for the owner's previous home baking business, before the company was incorporated. The FULL RM4,000 grant applies (50% of RM8,000).' Old text ('Confirm with the owner whether any COVID grant was received') confirmed absent."
+    },
+    {
+      "fix_id": 4,
+      "issue": "M1 blocker count: 2 -> 1",
+      "checks_affected": [23],
+      "status": "verified_fixed",
+      "verification": "Application_Pack.md line 22 now says '1 blocker to resolve'. '2 blockers to resolve' confirmed absent. Remaining blocker is 'KedaiDigital appointed provider?' which is correct — owner did not answer this question in 04a-owner-answers.json."
+    },
+    {
+      "fix_id": 5,
+      "issue": "M6 bank statements: now says '2 months: Aug + Sep 2026 — note: rules require 6-12 months'",
+      "checks_affected": [18, 22],
+      "status": "verified_fixed",
+      "verification": "Application_Pack.md line 164 now says 'Bank statements (2 months: Aug + Sep 2026 — note: rules require 6-12 months; need 4-10 more months)'. Matcher M6 have list updated to 'bank stmt Aug+Sep2026'. Old generic 'Bank statements' text replaced with specific months and insufficiency noted."
+    },
+    {
+      "fix_id": 6,
+      "issue": "pending_critical: removed 'Confirm any COVID-era grant received'",
+      "checks_affected": [5],
+      "status": "verified_fixed",
+      "verification": "04-paperwork-results.json pending_critical now has 4 items: 'Quotation expires 2026-10-18 (7 days)', 'Confirm KedaiDigital on MDEC appointed list', 'Locate staff contracts and confirm dates', 'Check Halal cert or Bumiputera status'. 'Confirm any COVID-era grant received' (or any item containing 'COVID') confirmed absent. This was resolved by owner's answer in 04a-owner-answers.json."
+    }
+  ],
+  "checks": [
+    {
+      "check": "1. All eligible/partial measures have packages",
+      "pass": true,
+      "detail": "M1,M3,M4,M5,M6 have packages in 04-paperwork-results.json; M2 in not_eligible. All present."
+    },
+    {
+      "check": "2. No ineligible measures have packages",
+      "pass": true,
+      "detail": "M2 (Street Vendor Grant) only; listed in not_eligible, no package created."
+    },
+    {
+      "check": "3. Documents have-lists match profiler",
+      "pass": true,
+      "detail": "SSM, mgmt accts, bank stmt, quotation, payroll all match 01-profiler-results.json."
+    },
+    {
+      "check": "4. Action steps consistent with matcher",
+      "pass": true,
+      "detail": "All 5 packages align with matcher act recommendations. M1 act: 'Confirm KedaiDigital on MDEC appointed list; submit IC; apply via FundingSocieties'. M6 act: 'Check Bumiputera-owned/Halal status; apply via Bank Seri Murni'. Both match."
+    },
+    {
+      "check": "5. All blockers in pending_critical",
+      "pass": true,
+      "detail": "FIX VERIFIED. pending_critical now has 4 items: quotation expiry, KedaiDigital appointed, staff contracts, Halal/Bumiputera. 'Confirm any COVID-era grant received' has been REMOVED (was resolved by owner answer in 04a). All remaining items are valid unresolved blockers."
+    },
+    {
+      "check": "6. Email accurate",
+      "pass": true,
+      "detail": "sent=true, msg_id=1a12704d63f220a3, to=lina.bakery.demo@gmail.com matches profiler. Owner replied (msg_id 1a1273ec99cec349) with answers + Sep bank statement."
+    },
+    {
+      "check": "7. Savings calculations correct (RECALCULATED WITH PYTHON)",
+      "pass": true,
+      "detail": "ALL CORRECT after fixes.\nPython recalculation results:\n- M3: 0.24 x 93,500 = 22,440 (AppPack: RM22,440 ✓); 0.15 x 93,500 = 14,025 (AppPack: RM14,025 ✓); savings = 22,440 - 14,025 = 8,415 (AppPack: ~RM8,415 ✓)\n- M4: 0.15 x 2,400 = 360 (AppPack: RM360 ✓); 0.15 x 8,000 = 1,200 (AppPack: RM1,200 ✓)\n- M1: 0.50 x 8,000 = 4,000 (AppPack: RM4,000 ✓)\n- 2027-a: 0.01 x 93,500 = 935 (AppPack: ~RM935 ✓)\n- M6: 0.80 x 45,000 = 36,000 (AppPack: RM36,000 ✓); fee = max(0.0075 x 36,000, 500) = max(270, 500) = 500 (AppPack: RM500/year ✓)\n- Immediate annual: 8,415 + 360 = 8,775 low; 8,415 + 1,200 = 9,615 high (AppPack: ~RM8,775-RM9,615 ✓)\nAll numbers match. Previous errors (RM22,400, RM8,375, RM270 fee, RM8,735-RM9,575 range) all corrected."
+    },
+    {
+      "check": "8. No factual inconsistencies",
+      "pass": true,
+      "detail": "Name (Lina's Bakery Sdn Bhd), reg (202301009876/1504321-T), PBT (RM93,500), quotation (RM8,000, QT-2026-0917), employees (8), salaries all consistent across profiler, matcher, paperwork, and Application_Pack."
+    },
+    {
+      "check": "9. Unconfirmed measures flagged",
+      "pass": true,
+      "detail": "M5 (stamp duty) and M6 (GGSM4) confidence=unconfirmed in rules.json and noted in Application_Pack. M4 confidence note in Application_Pack line 113: 'Confidence: unconfirmed — verify with LHDN or accountant LK Tan & Associates before claiming.'"
+    },
+    {
+      "check": "10. M1 quotation expiry flagged urgent",
+      "pass": true,
+      "detail": "URGENT section in Application_Pack (lines 12-16); expires 2026-10-18; in pending_critical."
+    },
+    {
+      "check": "11. 2027-b favorable exemption communicated",
+      "pass": true,
+      "detail": "GOOD NEWS section in Application_Pack (lines 199-202) explains MSME exempt from wage rise."
+    },
+    {
+      "check": "12. Future measures not in summary totals",
+      "pass": true,
+      "detail": "Summary separates immediate (M3+M4) from future (2027-a, 2027-b). 2027-a not in immediate total. Immediate total now correctly reads ~RM8,775-RM9,615/year (was ~RM8,735-RM9,575 before fix)."
+    },
+    {
+      "check": "13. info_only not used for eligibility",
+      "pass": true,
+      "detail": "Validity/fees info_only fields excluded from matcher eligibility decisions."
+    },
+    {
+      "check": "14. Electricity bill referenced if relevant",
+      "pass": true,
+      "detail": "Not required for eligible measures; correctly omitted from Application_Pack. Available in profiler if needed for M2 (not eligible)."
+    },
+    {
+      "check": "15. IC copies not requested by email",
+      "pass": true,
+      "detail": "Application_Pack says bring in person (line 8, line 41); not included in email."
+    },
+    {
+      "check": "16. M1 benefit is RM4,000 full grant (no prev digital grant) — NEW",
+      "pass": true,
+      "detail": "Owner confirmed in 04a-owner-answers.json: 'The COVID cash aid was a one-off for her old home baking business in 2021, before the company was set up. It was NOT a digital grant. They have never received any digital grant.' Quotation RM8,000 x 50% = RM4,000 full grant. Matcher updated to '50%xRM8k=RM4,000 full grant (no prev digital grant)'. Correct."
+    },
+    {
+      "check": "17. M1 still 'partial' because KedaiDigital appointment unknown — NEW",
+      "pass": true,
+      "detail": "Matcher M1: v=partial, pass=5, fail=0, blk=['KedaiDigital appointed provider?']. Previous grant blocker correctly removed. Only 1 blocker remains. Partial status correct because KedaiDigital's appointment status is still unknown (owner did not answer this question in 04a)."
+    },
+    {
+      "check": "18. M6 bank statements: 2 months reflected in AppPack — NEW",
+      "pass": true,
+      "detail": "FIX VERIFIED. Application_Pack.md line 164 now reads: 'Bank statements (2 months: Aug + Sep 2026 — note: rules require 6-12 months; need 4-10 more months)'. Matcher M6 have list updated to 'bank stmt Aug+Sep2026'. Insufficiency (only 2 of required 6-12 months) is now explicitly flagged in Application_Pack."
+    },
+    {
+      "check": "19. Previous grant answer properly recorded in 04a-owner-answers.json — NEW",
+      "pass": true,
+      "detail": "04a-owner-answers.json prev_grant field clearly records: 'Lina checked with her husband. The COVID cash aid was a one-off for her old home baking business in 2021, before the company was set up. It was NOT a digital grant. They have never received any digital grant.' Raw reply also included. Attachment_saved: Bank_Statement_Sep2026.pdf."
+    },
+    {
+      "check": "20. Bank statement attachment saved to run folder — NEW",
+      "pass": true,
+      "detail": "Bank_Statement_Sep2026.pdf exists at /Users/limhuizern/Documents/peluang/outputs/run-20261011-020023/Bank_Statement_Sep2026.pdf (9,398 bytes, saved 2026-10-11 03:42). Confirmed via ls."
+    },
+    {
+      "check": "21. M1 notes reflect owner confirmed no prev digital grant — NEW",
+      "pass": true,
+      "detail": "FIX VERIFIED. Application_Pack.md line 53 now reads: 'Owner confirmed: Lina's Bakery has NEVER received any digital grant. The COVID cash aid in 2021 was for the owner's previous home baking business, before the company was incorporated. The FULL RM4,000 grant applies (50% of RM8,000).' Old uncertainty text ('Confirm with the owner whether any COVID grant was received — it does not block this application') confirmed absent."
+    },
+    {
+      "check": "22. M6 bank statement description includes months and insufficiency note — NEW",
+      "pass": true,
+      "detail": "FIX VERIFIED. Application_Pack.md line 164 now says 'Bank statements (2 months: Aug + Sep 2026 — note: rules require 6-12 months; need 4-10 more months)'. M6 Documents Still Needed (lines 166-169) lists financials, proof of income, and Halal/Bumiputera confirmation. The 6-12 month insufficiency is now explicitly noted in the have section."
+    },
+    {
+      "check": "23. M1 blocker count correct (1, not 2) — NEW",
+      "pass": true,
+      "detail": "FIX VERIFIED. Application_Pack.md line 22 now reads: 'Partially eligible (5 of 5 checks pass; 1 blocker to resolve)'. '2 blockers to resolve' confirmed absent from the entire document. The single remaining blocker is KedaiDigital appointed provider, which is correct."
+    },
+    {
+      "check": "24. M6 guarantee fee minimum (RM500 per rules) — NEW",
+      "pass": true,
+      "detail": "FIX VERIFIED. Python: fee = max(0.0075 x 36,000, 500) = max(270, 500) = 500. Application_Pack.md line 158 now reads: 'Guarantee fee (0.75% p.a., minimum RM500) | RM500/year'. '~RM270/year' confirmed absent. rules.json M6 how_to_claim states 'minimum RM500'."
+    },
+    {
+      "check": "25. M3 tax calculation precision — NEW",
+      "pass": true,
+      "detail": "FIX VERIFIED. Python: 0.24 x 93,500 = 22,440.0 (not 22,400); 0.15 x 93,500 = 14,025.0; savings = 22,440 - 14,025 = 8,415.0 (not 8,375). Application_Pack.md line 66: 'RM22,440' ✓. Line 67: 'RM14,025' ✓. Line 68: '~RM8,415' ✓. Line 219: '~RM8,775-RM9,615/year' ✓. 04-paperwork-results.json M3 benefit: 'saves ~RM8,415/yr' ✓. Old values (RM22,400, RM8,375, RM8,735, RM9,575) all confirmed absent from Application_Pack.md."
+    }
+  ],
+  "issues": [],
+  "verdict": "pass",
+  "verdict_detail": "All 25 checks PASS. All 6 fixes applied by the Paperwork expert have been verified correct.\n\nPython recalculation confirms all numbers are now accurate:\n- M3: 0.24 x 93,500 = 22,440; 0.15 x 93,500 = 14,025; savings = 8,415 ✓\n- M4: 0.15 x 2,400 = 360; 0.15 x 8,000 = 1,200 ✓\n- M1: 0.50 x 8,000 = 4,000 ✓\n- 2027-a: 0.01 x 93,500 = 935 ✓\n- M6: 0.80 x 45,000 = 36,000; fee = max(270, 500) = 500 ✓\n- Immediate annual: 8,415 + 360 = 8,775 low; 8,415 + 1,200 = 9,615 high ✓\n\nApplication_Pack.md verified: all old incorrect values (RM22,400, RM8,375, ~RM270/year, 2 blockers, RM8,735-RM9,575) are absent. All new correct values (RM22,440, RM8,415, RM500/year, 1 blocker, RM8,775-RM9,615) are present.\n\n04-paperwork-results.json verified: M3 benefit says 'saves ~RM8,415/yr', pending_critical has 'COVID-era grant' item removed (4 items remain, all valid).\n\nNo remaining issues. Previous verdict was 'pass_with_warnings' with 6 issues. All 6 issues have been resolved and verified.",
+  "recheck": {
+    "status": "complete",
+    "ts": "2026-10-11T05:15:00+08:00",
+    "round": 2,
+    "result": "25 checks performed (15 original + 10 new). 25 pass, 0 fail. All 6 fixes verified correct via Python recalculation and string-presence checks in Application_Pack.md and 04-paperwork-results.json. Verdict upgraded from 'pass_with_warnings' to 'pass'. No remaining issues."
+  }
+}

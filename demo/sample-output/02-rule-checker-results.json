@@ -1,0 +1,234 @@
+{
+  "measures": [
+    {
+      "id": "M1",
+      "name": "Geran Digital PMKS MADANI",
+      "type": "matching grant",
+      "amount": "50% of invoice from appointed service provider, up to RM5,000 per SME/cooperative/professional service provider",
+      "announced_in": "Budget 2025 (Belanjawan Madani 2025)",
+      "status": "active",
+      "eligibility_rules": [
+        { "field": "ownership_malaysian", "operator": ">=", "value": "60%", "text": "At least 60% owned by Malaysian citizens" },
+        { "field": "registration", "operator": "in", "value": ["SSM", "PBT business license", "SKM certificate", "professional statutory body registration"], "text": "Registered with SSM, or holds a PBT business license, or SKM certificate (cooperatives), or registered under a professional statutory body (e.g. lawyers, accountants, doctors, engineers)" },
+        { "field": "operating_period_months", "operator": ">=", "value": 6, "text": "Has been operating for at least 6 months" },
+        { "field": "average_annual_sales", "operator": ">=", "value": "RM50,000", "text": "Average annual sales of at least RM50,000" },
+        { "field": "target_segments", "operator": "in", "value": ["Food & Beverage", "Retail", "Healthcare", "Professional Services", "Smart Agriculture"], "text": "Targeted at Food & Beverage, Retail, Healthcare, Professional Services, and Smart Agriculture sectors (Segmen Sasaran)" },
+        { "field": "validity_period", "operator": "==", "value": "subject to government allocation", "info_only": true, "text": "Grant is subject to availability of allocated funds by the Government" },
+        { "field": "fees", "operator": "==", "value": "none", "info_only": true, "text": "No fees are charged for this grant" }
+      ],
+      "exceptions": "SMEs that have previously received a digitalisation matching grant (Geran Padanan Pendigitalan) are NOT eligible — EXCEPT for e-invoicing service applications, which are allowed even if a previous grant was received",
+      "required_documents": [
+        "Copy of IC or passport of owner / director / partner / appointed representative (for cooperatives or professional service providers)",
+        "Copy of business registration: SSM registration (or equivalent under Companies Act 2016), or SKM certificate (cooperatives), or professional body registration certificate",
+        { "any_one_of": [
+          "Latest audited accounts",
+          "Latest management accounts",
+          "Bank statements for the last 2 months"
+        ]},
+        "Quote or invoice from an appointed service provider (pembekal perkhidmatan yang dilantik)",
+        "Any other documents required by BSN from time to time"
+      ],
+      "how_to_claim": "Apply through the Funding Society website (https://fundingsocieties.com.my/msme-digital-grant-madani#application-form), appointed by MDEC to manage applications. After approval (up to 3 working days), pay the balance of the invoice (invoice minus grant) within 14 days via the payment link emailed to you. BSN then pays the grant directly to the appointed service provider. Up to 3 digital services may be applied for, from one or more appointed providers.",
+      "excludes": "SMEs/cooperatives/professional service providers that have previously received Geran Padanan Pendigitalan — except for e-invoicing service applications",
+      "source_files": ["BSN_GDPM_FAQ_BM.pdf", "BSN_GDPM_Terms_BM.pdf"],
+      "source_urls": [
+        "https://www.bsn.com.my/cms/upload/pdf/business/msme_faq_aug_bm.pdf",
+        "https://www.bsn.com.my/cms/upload/pdf/business/msme_tnc_aug_bm.pdf"
+      ],
+      "confidence": "official"
+    },
+    {
+      "id": "M2",
+      "name": "Geran Digital Penjaja MADANI",
+      "type": "grant",
+      "amount": "RM1,000 per vendor (paid directly by BSN to the appointed digital service provider; no co-payment required)",
+      "announced_in": "Budget 2025 (Belanjawan Madani 2025)",
+      "status": "active",
+      "eligibility_rules": [
+        { "field": "vendor_type", "operator": "in", "value": ["immobile", "mobile", "temporary"], "text": "Must be an immobile vendor (permanent stall in public/private area), a mobile vendor (travels from one location to another, with or without a vehicle), or a temporary vendor (temporary stall for a certain period, including seasonal fruit stalls, promotional stalls, night/daily/farmers' markets)" },
+        { "field": "previous_gdpm_received", "operator": "==", "value": false, "text": "Not eligible if the vendor has already received the Geran Digital PMKS Madani (GDPM)" },
+        { "field": "applications_per_vendor", "operator": "<=", "value": 1, "text": "Limited to one application per vendor" },
+        { "field": "validity_period", "operator": "==", "value": "subject to government allocation", "info_only": true, "text": "Grant is provided by the Government and is subject to the allocated funds" },
+        { "field": "fees", "operator": "==", "value": "none", "info_only": true, "text": "No fees are charged" }
+      ],
+      "exceptions": "None stated in the source document",
+      "required_documents": [
+        "Copy of the sole proprietor or partner's Identification Card",
+        { "any_one_of": [
+          "SSM Registration document",
+          "Business License from Local Authority",
+          "Operation Permit",
+          "License from the District Council"
+        ]},
+        "Bank statements for the last 2 months",
+        { "any_one_of": [
+          "Current electricity bill",
+          "Current water bill",
+          "Current internet bill"
+        ]},
+        "Any other supporting documents required by BSN from time to time"
+      ],
+      "how_to_claim": "Apply through the Funding Society website (http://fundingsocieties.com.my/geran-digital-penjaja-madani), appointed by MDEC to manage applications. No upfront payment is required — BSN pays RM1,000 directly to the appointed digital service provider on the vendor's behalf. Application processing takes up to 3 working days. Only one digital service is available: Digital Payment / Electronic Point of Sale (e-POS).",
+      "excludes": "Vendors who have already received the Geran Digital PMKS Madani (GDPM)",
+      "source_files": ["BSN_GDPjM_FAQ_EN.pdf"],
+      "source_urls": ["https://www.bsn.com.my/cms/upload/pdf/business/gdpjm_faq_aug_en.pdf"],
+      "confidence": "official"
+    },
+    {
+      "id": "M3",
+      "name": "SME income tax rates",
+      "type": "tax rate",
+      "amount": "Tiered: 15% on first RM150,000 of taxable income; 17% on RM150,001–RM600,000; 24% on balance above RM600,000",
+      "announced_in": "Standing rates (Year of Assessment 2023–2024)",
+      "status": "active",
+      "eligibility_rules": [
+        { "field": "paid_up_capital", "operator": "<=", "value": "RM2.5 million", "text": "Paid-up capital not more than RM2.5 million" },
+        { "field": "gross_business_income", "operator": "<=", "value": "RM50 million", "text": "Gross business income not more than RM50 million" },
+        { "field": "entity_type", "operator": "==", "value": "company", "text": "Must be a company — these are company tax rates" },
+        { "field": "year_of_assessment", "operator": "in", "value": ["2023", "2024", "2025", "2026"], "text": "These rates apply to Year of Assessment 2023–2026" }
+      ],
+      "exceptions": "Companies that do NOT meet both criteria above are taxed at a flat 24% rate",
+      "required_documents": [
+        "Annual tax return filed under self-assessment with LHDN"
+      ],
+      "how_to_claim": "File annual tax return under the self-assessment system with LHDN. The SME tiered rates are applied automatically based on the paid-up capital and gross business income declared in the return.",
+      "excludes": "Companies with paid-up capital more than RM2.5 million, or gross business income more than RM50 million (these pay a flat 24%)",
+      "source_files": ["LHDN_Company_Tax_Rates.pdf"],
+      "source_urls": ["https://www.hasil.gov.my/en/syarikat/kadar-cukai-syarikat/"],
+      "confidence": "official"
+    },
+    {
+      "id": "M4",
+      "name": "E-invoicing special deduction",
+      "type": "tax deduction",
+      "amount": "Up to RM50,000 per year for ESG-related expenditures including e-invoicing implementation costs",
+      "announced_in": "Budget 2024",
+      "status": "active",
+      "eligibility_rules": [
+        { "field": "entity_type", "operator": "==", "value": "MSME", "text": "Must be a micro, small or medium enterprise (MSME)" },
+        { "field": "year_of_assessment", "operator": "in", "value": ["2024", "2025", "2026", "2027"], "text": "Available for year of assessment 2024 through 2027" }
+      ],
+      "exceptions": "None stated in the source document",
+      "required_documents": [
+        "Annual tax return claiming the deduction",
+        "Supporting documentation of e-invoicing / ESG implementation expenses"
+      ],
+      "how_to_claim": "Claim as a tax deduction (up to RM50,000 per year) in the annual tax return for ESG-related expenditures, which include costs of implementing e-invoicing systems. The deduction is available from YA 2024 through 2027. The Income Tax (Issuance of Electronic Invoice) Rules 2024 [P.U. (A) 265], effective 1 October 2024, empowers the Minister of Finance to mandate e-invoicing. Mandatory e-invoicing is phased: Phase 1 (>RM100m turnover) from 1 Aug 2024; Phase 2 (>RM25m) from 1 Jan 2025; Phase 3 (all others) from 1 July 2025.",
+      "excludes": "Non-MSME entities; expenses incurred outside the YA 2024–2027 period",
+      "source_files": ["Optional_EInvoicing_Deduction.pdf"],
+      "source_urls": ["https://www.ficleus.com/posts/malaysia-s-new-e-invoicing-initiative-tax-incentives-and-compliance-guidelines"],
+      "confidence": "unconfirmed"
+    },
+    {
+      "id": "M5",
+      "name": "Stamp duty exemption on employment contracts",
+      "type": "stamp duty exemption",
+      "amount": "Exemption from stamp duty on employment contracts for monthly salaries up to RM3,000 (previously RM300)",
+      "announced_in": "Budget 2026",
+      "status": "active",
+      "eligibility_rules": [
+        { "field": "employment_contract_salary", "operator": "<=", "value": "RM3,000/month", "text": "Employment contract must be for a salary of RM3,000 per month or below (threshold raised from RM300)" },
+        { "field": "contract_date", "operator": ">=", "value": "2026-01-01", "text": "Employment contract must be dated on or after 1 January 2026" }
+      ],
+      "exceptions": "None stated in the source documents",
+      "required_documents": [
+        "Employment contract submitted for stamping with LHDN"
+      ],
+      "how_to_claim": "The exemption applies automatically from 1 January 2026 when stamping employment contracts with LHDN. No separate application is needed — the stamp duty self-assessment system will apply the exemption for qualifying contracts.",
+      "excludes": "Employment contracts with a monthly salary above RM3,000",
+      "source_files": ["Budget2026_Highlights.pdf", "Optional_Stamp_Duty.pdf"],
+      "source_urls": [
+        "https://www.bernama.com/en/news.php/?id=2477258",
+        "https://www.maybank2u.com.my/maybank2u/malaysia/en/articles/headlines/local/budget-2026-highlights.page"
+      ],
+      "confidence": "unconfirmed"
+    },
+    {
+      "id": "M6",
+      "name": "GGSM4 financing guarantee",
+      "type": "government financing guarantee",
+      "amount": "Up to RM20 million guarantee per SME under GGSM4 (total fund RM30 billion); guarantee coverage up to 80%",
+      "announced_in": "Budget 2026",
+      "status": "active",
+      "eligibility_rules": [
+        { "field": "ownership_malaysian", "operator": ">=", "value": "51%", "text": "Sole proprietorship owned by Malaysian citizens, or partnership/LLP controlled and majority-owned by Malaysians, or at least 51% of shares held by Malaysian citizens" },
+        { "field": "registration", "operator": "in", "value": ["Business Registration Act 1956 (SSM)", "Companies Act 2016", "LLP Act 2012"], "text": "Registered under SSM, Companies Act 2016, or LLP Act 2012" },
+        { "field": "sales_threshold", "operator": "<=", "value": "RM20 million (services) / RM50 million (manufacturing)", "text": "Services/other sectors: sales not exceeding RM20 million OR no more than 75 full-time employees; Manufacturing: sales not exceeding RM50 million OR no more than 200 full-time employees" },
+        { "field": "sector", "operator": "in", "value": ["Bumiputera", "Halal", "Tourism", "High Growth High Value (semiconductor, advanced manufacturing, digital and AI, aerospace, green technology, medical devices)"], "text": "Focus sectors: Bumiputera, Halal, Tourism, and HGHV sectors" },
+        { "field": "recipient_type", "operator": "in", "value": ["SMEs (PMKS)", "mid-tier companies (MTC)"], "text": "Open to SMEs (PMKS) and mid-tier companies (MTC) owned by Malaysians" },
+        { "field": "purpose", "operator": "==", "value": "working capital & capital expenditure", "text": "Guarantee is for working capital and capital expenditure" },
+        { "field": "sole_proprietorship_max_amount", "operator": "<=", "value": "RM1 million", "text": "Sole proprietorships and partnerships are subject to a lower maximum of RM1 million" }
+      ],
+      "exceptions": "Other SJPP schemes (SJMK, SJMK-SU, SJMK-B, SJMK-X, SJMK-W, SJAD) have lower maximum amounts (RM10 million) and are available for broader sectors. GGSM4 is the flagship scheme with the highest cap (RM20 million) and 80% coverage.",
+      "required_documents": [
+        "SSM registration",
+        "1–2 years financial statements",
+        "6–12 months bank statements",
+        "Proof of business income"
+      ],
+      "how_to_claim": "Apply through a participating bank (not directly to SJPP). SJPP works with 22 financial institutions. Inform the bank officer you want to use a government guarantee scheme under GGSM4. The bank reviews CCRIS, CTOS, financial statements and cash flow; if collateral is insufficient, the bank submits the application to SJPP. SJPP evaluates (may request additional documents through the bank). After approval, pay the guarantee fee upfront (0.75% per annum, minimum RM500). SJPP issues the Guarantee Protection within 10 working days. The bank then disburses funds. Application period open until 31 December 2026 or until allocation is fully utilised.",
+      "excludes": "Public-listed companies (Main Board, except ACE/LEAP), GLCs, MoF Inc. companies, subsidiaries 51% owned by GLCs, active civil servants",
+      "source_files": ["Optional_GGSM4.pdf"],
+      "source_urls": ["https://rakyathub.my/cara-mohon-sjpp-jaminan-pembiayaan-2026"],
+      "confidence": "unconfirmed"
+    },
+    {
+      "id": "2027-a",
+      "name": "Budget 2027 MSME tax cut",
+      "type": "tax rate reduction",
+      "amount": "One percentage point reduction: 15%→14% on first RM150,000; 17%→16% on RM150,001–RM600,000; 24% unchanged on balance above RM600,000. Expected to provide up to RM6,000 in tax savings per SME, benefiting over 300,000 SMEs.",
+      "announced_in": "Budget 2027",
+      "status": "future – not yet in force",
+      "eligibility_rules": [
+        { "field": "paid_up_capital", "operator": "<=", "value": "RM2.5 million", "text": "Same SME criteria as current: paid-up capital not more than RM2.5 million" },
+        { "field": "gross_business_income", "operator": "<=", "value": "RM50 million", "text": "Gross business income not more than RM50 million" }
+      ],
+      "exceptions": "Companies not meeting both SME criteria continue to pay the flat 24% rate (unchanged)",
+      "required_documents": [
+        "Annual tax return filed under self-assessment with LHDN (rates applied automatically based on SME status)"
+      ],
+      "how_to_claim": "Details pending — measure announced in Budget 2027 on 9 October 2026. Expected to apply from Year of Assessment 2027 via self-assessment tax filing; reduced rates would be applied automatically. Implementation details to be confirmed by LHDN/MOF.",
+      "excludes": "Companies not meeting SME criteria (paid-up capital > RM2.5 million or gross income > RM50 million)",
+      "source_files": ["Budget2027_SME_Measures.pdf"],
+      "source_urls": [
+        "https://www.malaysiakini.com/news/886658-live-anwar-tables-budget-2027",
+        "https://www.bernama.com/en/general/news.php?id=2618289",
+        "https://www.bernamabiz.com/news.php?id=2617998"
+      ],
+      "confidence": "unconfirmed"
+    },
+    {
+      "id": "2027-b",
+      "name": "Budget 2027 minimum wage rise",
+      "type": "minimum wage increase",
+      "amount": "Minimum wage raised from RM1,700 to RM2,000 per month, effective June 2027",
+      "announced_in": "Budget 2027",
+      "status": "future – not yet in force",
+      "eligibility_rules": [
+        { "field": "annual_sales", "operator": ">=", "value": "RM50 million", "text": "Applies to all employers with annual sales of RM50 million or above; MSMEs with annual sales below RM50 million are exempted from the revised rate" }
+      ],
+      "exceptions": "MSMEs with annual sales below RM50 million are exempted from the revised RM2,000 minimum wage rate",
+      "required_documents": [
+        "N/A — statutory change; employers must comply by June 2027"
+      ],
+      "how_to_claim": "Details pending — measure announced in Budget 2027 on 9 October 2026. The minimum wage increase takes effect from June 2027. Employers above the SME threshold must comply; MSMEs with annual sales below RM50 million are exempt. Implementation details (including legislative amendments) to be confirmed by the Ministry of Human Resources / MOF.",
+      "excludes": "MSMEs with annual sales below RM50 million (exempt from the revised minimum wage rate)",
+      "source_files": ["Budget2027_SME_Measures.pdf"],
+      "source_urls": [
+        "https://www.malaysiakini.com/news/886658-live-anwar-tables-budget-2027",
+        "https://www.bernama.com/en/general/news.php?id=2618289",
+        "https://www.bernamabiz.com/news.php?id=2617998"
+      ],
+      "confidence": "unconfirmed"
+    }
+  ],
+  "summary": {
+    "total_measures": 8,
+    "active_measures": 6,
+    "future_measures": 2,
+    "active_measure_ids": ["M1", "M2", "M3", "M4", "M5", "M6"],
+    "future_measure_ids": ["2027-a", "2027-b"],
+    "one_time_grant_ids": ["M1", "M2"],
+    "one_time_grant_note": "M1 (Geran Digital PMKS MADANI) and M2 (Geran Digital Penjaja MADANI) are one-time grants — each recipient can only receive the grant once. M3 (tax rates), M4 (tax deduction), M5 (stamp duty exemption), 2027-a (tax rate reduction) are recurring tax benefits applied per year/per transaction. M6 is a financing guarantee (not a grant). 2027-b is a minimum wage statutory change (not a grant)."
+  }
+}

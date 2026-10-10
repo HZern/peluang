@@ -1,0 +1,29 @@
+{
+  "expert": "Paperwork",
+  "ts": "2026-10-11T03:15:00+08:00",
+  "inputs": ["01-profiler-results.json", "03-matcher-results.json"],
+  "packages": [
+    {"id":"M1","name":"Digital Adoption Grant","eligible":"partial","steps":["Verify KedaiDigital on MDEC appointed list","Gather IC copies of both directors","Apply via FundingSocieties/MDEC","Submit before quotation expires 2026-10-18"],"have":["SSM cert","mgmt accts","bank stmt","quotation"],"need":["IC copies","confirm provider appointment"],"benefit":"50% x RM8k = RM4,000"},
+    {"id":"M3","name":"SME Tiered Tax Rates","eligible":"yes","steps":["File YA2025 return at SME tiered rate via accountant"],"have":["SSM","mgmt accts"],"need":["annual tax return"],"benefit":"15% vs 24%; saves ~RM8,415/yr"},
+    {"id":"M4","name":"E-Invoicing Tax Deduction","eligible":"yes","steps":["Keep e-invoicing invoices","Claim as ESG deduction in YA2026 return"],"have":["quotation w/ e-invoicing RM2.4k"],"need":["tax return","ESG expense records"],"benefit":"Tax save ~RM360-1,200"},
+    {"id":"M5","name":"Stamp Duty Exemption","eligible":"partial","steps":["Locate contracts for 6 existing staff","Confirm contract dates","Prepare 2 new hire contracts Nov 2026","Submit for stamping at LHDN"],"have":["payroll summary"],"need":["employment contracts"],"benefit":"Exemption on ~6-8 contracts"},
+    {"id":"M6","name":"SME Guarantee (Oven)","eligible":"partial","steps":["Check Bumiputera/Halal sector status","Apply via Bank Seri Murni","Submit SSM, financials, bank stmt"],"have":["SSM","mgmt accts","bank stmt"],"need":["financials 1-2yr","proof income","Halal cert?"],"benefit":"80% guarantee on RM45k loan"}
+  ],
+  "not_eligible": [{"id":"M2","name":"Street Vendor Grant","reason":"Sdn Bhd, not individual hawker"}],
+  "coming_soon": [
+    {"id":"2027-a","name":"SME Tax Rate Cut","benefit":"15%->14%; saves ~RM935/yr"},
+    {"id":"2027-b","name":"MSME Min Wage Exemption","benefit":"Exempt from RM1.7k->RM2k; saves ~RM400-500/mo"}
+  ],
+  "email_to": "lina.bakery.demo@gmail.com",
+  "email_subject": "Your Business Incentives Summary — Lina's Bakery",
+  "email_sent": true,
+  "email_msg_id": "1a12704d63f220a3",
+  "application_pack": "Application_Pack.md",
+  "pending_critical": [
+    "Quotation expires 2026-10-18 (7 days)",
+    "Confirm KedaiDigital on MDEC appointed list",
+    "Locate staff contracts and confirm dates",
+    "Check Halal cert or Bumiputera status"
+  ],
+  "summary": {"packages":5,"not_eligible":1,"coming_soon":2,"docs_have":10,"docs_need":8}
+}

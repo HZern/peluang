@@ -1,0 +1,410 @@
+{
+  "matcher_run": {
+    "run_date": "2026-10-11",
+    "business_name": "Lina's Bakery Sdn. Bhd.",
+    "input_profile": "01-profiler-results.json",
+    "input_rules": "02-rule-checker-results.json"
+  },
+  "measures": [
+    {
+      "measure_id": "M1",
+      "measure_name": "Geran Digital PMKS MADANI",
+      "eligibility_status": "needs_info",
+      "eligibility_reason": "Lina's Bakery meets all core eligibility criteria (100% Malaysian-owned, SSM-registered, operating 43 months, RM824,300 annual sales, Food & Beverage sector). However, the business's previous digitalisation grant status is unknown. If the business previously received a Geran Padanan Pendigitalan, it would be excluded from this grant EXCEPT for the e-invoicing portion of the KedaiDigital quotation. The owner must confirm whether any prior digitalisation matching grant was received. Additionally, KedaiDigital Solutions Sdn. Bhd. must be verified as an appointed service provider under the GDPM scheme.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "At least 60% owned by Malaysian citizens",
+          "field": "ownership_malaysian",
+          "status": "pass",
+          "detail": "Business is 100% Malaysian-owned (both shareholders are Malaysian nationals)."
+        },
+        {
+          "rule": "Registered with SSM, PBT, SKM, or professional body",
+          "field": "registration",
+          "status": "pass",
+          "detail": "Registered with SSM under the Companies Act 2016 (reg. no. 202301009876 / 1504321-T)."
+        },
+        {
+          "rule": "Operating for at least 6 months",
+          "field": "operating_period_months",
+          "status": "pass",
+          "detail": "Operating for approximately 43 months since incorporation on 14 March 2023."
+        },
+        {
+          "rule": "Average annual sales of at least RM50,000",
+          "field": "average_annual_sales",
+          "status": "pass",
+          "detail": "Average annual sales of RM824,300 (FY2025 management accounts)."
+        },
+        {
+          "rule": "Targeted at F&B, Retail, Healthcare, Professional Services, or Smart Agriculture",
+          "field": "target_segments",
+          "status": "pass",
+          "detail": "Business sector is Food & Beverage, which is an explicitly targeted segment."
+        },
+        {
+          "rule": "Grant subject to government allocation",
+          "field": "validity_period",
+          "status": "pass",
+          "detail": "Info-only rule. No action required from business."
+        },
+        {
+          "rule": "No fees charged for this grant",
+          "field": "fees",
+          "status": "pass",
+          "detail": "Info-only rule. No fees apply."
+        },
+        {
+          "rule": "Exception: SMEs that previously received Geran Padanan Pendigitalan are NOT eligible, except for e-invoicing applications",
+          "field": "has_previous_digitalisation_grant",
+          "status": "needs_info",
+          "detail": "Previous grant status is 'unknown'. Owner stated: 'Not sure. I think we got something during COVID? I need to check with my husband.' If no prior grant was received, the business is eligible for the full grant (up to RM5,000) covering all three KedaiDigital services. If a prior grant was received, only the e-invoicing module (RM2,400) is eligible for the matching grant (RM1,200)."
+        },
+        {
+          "rule": "Quote must be from an appointed service provider",
+          "field": "quotation_provider_appointed",
+          "status": "needs_info",
+          "detail": "Quotation is from KedaiDigital Solutions Sdn. Bhd. (QT-2026-0917, dated 2026-09-18, total RM8,000). The quotation terms state 'Vendor can assist with government digitalisation grant applications,' suggesting familiarity with the scheme, but KedaiDigital must be confirmed as a BSN/MDEC-appointed service provider."
+        }
+      ],
+      "estimated_benefit": "Up to RM5,000 (50% of invoice, capped at RM5,000). Based on the KedaiDigital quotation of RM8,000, the grant would cover RM4,000 (50% of RM8,000). If the business previously received a digitalisation grant, only the e-invoicing module (RM2,400) qualifies: grant = RM1,200 (50% of RM2,400).",
+      "is_one_time_grant": true,
+      "what_is_needed": [
+        "Confirm with the owner whether the business (or either shareholder) previously received any Geran Padanan Pendigitalan (digitalisation matching grant), including during the COVID period.",
+        "Verify that KedaiDigital Solutions Sdn. Bhd. is on the BSN/MDEC appointed service provider list for GDPM.",
+        "Copy of IC of director (Nur Lina binti Hassan) — owner will provide.",
+        "Copy of SSM registration (already available in SSM Company Profile).",
+        "Latest management accounts (FY2025, already available) or bank statements for last 2 months (already available: Aug 2026).",
+        "Quotation from appointed service provider (already in hand: KedaiDigital QT-2026-0917).",
+        "Apply through Funding Society website (https://fundingsocieties.com.my/msme-digital-grant-madani).",
+        "After approval (up to 3 working days), pay the balance of the invoice (invoice minus grant) within 14 days via the payment link."
+      ],
+      "priority": "high"
+    },
+    {
+      "measure_id": "M2",
+      "measure_name": "Geran Digital Penjaja MADANI",
+      "eligibility_status": "not_eligible",
+      "eligibility_reason": "This grant is specifically for street vendors (penjaja) — immobile vendors (permanent stalls in public/private areas), mobile vendors (who travel from location to location), or temporary vendors (market stalls, night markets, farmers' markets). Lina's Bakery Sdn. Bhd. is a registered private company operating from a fixed commercial premises (No. 18G, Jalan Harmoni 3/2, Taman Harmoni, PJ) with 8 full-time employees, RM824,300 annual sales, and corporate catering clients. It does not fit any vendor category targeted by this grant.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "Must be an immobile, mobile, or temporary vendor",
+          "field": "vendor_type",
+          "status": "fail",
+          "detail": "Lina's Bakery is a Sdn. Bhd. company operating from a commercial shop lot, not a vendor/penjaja. It has a registered business address, paid-up capital of RM100,000, and 8 employees. It does not meet any of the vendor type definitions (immobile vendor, mobile vendor, or temporary vendor)."
+        },
+        {
+          "rule": "Not eligible if vendor already received GDPM",
+          "field": "previous_gdpm_received",
+          "status": "not_evaluated",
+          "detail": "Not evaluated because the vendor type rule already fails."
+        },
+        {
+          "rule": "Limited to one application per vendor",
+          "field": "applications_per_vendor",
+          "status": "not_evaluated",
+          "detail": "Not evaluated because the vendor type rule already fails."
+        },
+        {
+          "rule": "Grant subject to government allocation",
+          "field": "validity_period",
+          "status": "pass",
+          "detail": "Info-only rule."
+        },
+        {
+          "rule": "No fees charged",
+          "field": "fees",
+          "status": "pass",
+          "detail": "Info-only rule."
+        }
+      ],
+      "estimated_benefit": "None — not eligible.",
+      "is_one_time_grant": true,
+      "what_is_needed": [],
+      "priority": "low"
+    },
+    {
+      "measure_id": "M3",
+      "measure_name": "SME income tax rates",
+      "eligibility_status": "eligible",
+      "eligibility_reason": "Lina's Bakery Sdn. Bhd. meets all SME criteria: paid-up capital of RM100,000 (well under RM2.5 million), gross business income of RM824,300 (well under RM50 million), and is a registered company. The business qualifies for the tiered SME tax rates of 15% on the first RM150,000 of taxable income and 17% on RM150,001–RM600,000, instead of the flat 24% rate. Based on FY2025 profit before tax of RM93,500, this results in approximately RM8,415 in annual tax savings compared to the flat 24% rate.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "Paid-up capital not more than RM2.5 million",
+          "field": "paid_up_capital",
+          "status": "pass",
+          "detail": "Paid-up capital is RM100,000, well under the RM2.5 million threshold."
+        },
+        {
+          "rule": "Gross business income not more than RM50 million",
+          "field": "gross_business_income",
+          "status": "pass",
+          "detail": "Gross business income is RM824,300, well under the RM50 million threshold."
+        },
+        {
+          "rule": "Must be a company",
+          "field": "entity_type",
+          "status": "pass",
+          "detail": "Entity type is 'company' — Private company limited by shares (Sdn. Bhd.)."
+        },
+        {
+          "rule": "Rates apply to Year of Assessment 2023–2026",
+          "field": "year_of_assessment",
+          "status": "pass",
+          "detail": "Current year of assessment is 2026, which falls within the applicable range (2023–2026)."
+        }
+      ],
+      "estimated_benefit": "Approximately RM8,415/year in tax savings. Calculation: At SME tiered rate, tax on RM93,500 (FY2025 PBT) = 15% x RM93,500 = RM14,025. At flat 24% rate = 24% x RM93,500 = RM22,440. Savings = RM8,415/year. Actual savings depend on chargeable income after capital allowances and other deductions.",
+      "is_one_time_grant": false,
+      "what_is_needed": [
+        "File annual tax return under self-assessment with LHDN (handled by accountant LK Tan & Associates).",
+        "The SME tiered rates are applied automatically based on paid-up capital and gross income declared in the return — no separate application needed."
+      ],
+      "priority": "medium"
+    },
+    {
+      "measure_id": "M4",
+      "measure_name": "E-invoicing special deduction",
+      "eligibility_status": "eligible",
+      "eligibility_reason": "Lina's Bakery qualifies as an MSME (small enterprise in the services sector: RM824,300 annual sales, 8 employees — well within the SME definition of sales up to RM3 million or up to 29 employees). The business has a quotation for an e-invoicing module (RM2,400 from KedaiDigital, QT-2026-0917) and does not currently have an e-invoicing system in place. The e-invoicing implementation cost can be claimed as a tax deduction of up to RM50,000 per year for ESG-related expenditures, available from YA 2024 through 2027.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "Must be a micro, small or medium enterprise (MSME)",
+          "field": "entity_type",
+          "status": "pass",
+          "detail": "Lina's Bakery is a small enterprise: annual sales of RM824,300 (under RM3 million threshold for services sector) and 8 employees (under 30). Meets the SME Corporation Malaysia definition of a small enterprise in the services sector."
+        },
+        {
+          "rule": "Available for YA 2024 through 2027",
+          "field": "year_of_assessment",
+          "status": "pass",
+          "detail": "Current year of assessment is 2026, which falls within the 2024–2027 eligibility window."
+        }
+      ],
+      "estimated_benefit": "Up to RM50,000/year in deductible ESG expenses. Based on the known e-invoicing module cost of RM2,400/year (KedaiDigital quotation), the estimated tax savings = RM2,400 x 15% (marginal SME tax rate) = RM360/year. If the business incurs additional ESG-related expenses (e.g., energy-efficient equipment, waste reduction), the maximum potential tax savings is up to RM7,500/year (RM50,000 x 15%).",
+      "is_one_time_grant": false,
+      "what_is_needed": [
+        "Implement the e-invoicing module (quotation already in hand from KedaiDigital, RM2,400 for 12-month subscription).",
+        "Keep the invoice/receipt from KedaiDigital as supporting documentation.",
+        "Claim the deduction in the annual tax return (YA 2026) — accountant LK Tan & Associates can handle this.",
+        "If claiming additional ESG expenses, maintain supporting documentation for all ESG-related expenditures."
+      ],
+      "priority": "medium"
+    },
+    {
+      "measure_id": "M5",
+      "measure_name": "Stamp duty exemption on employment contracts",
+      "eligibility_status": "eligible",
+      "eligibility_reason": "The business has employees earning RM3,000/month or below: E005 (Nurul Izzah, RM2,000), E006 (Chong Wei Jie, RM1,900), and E007 (Aisyah binti Rosli, RM1,800). However, these existing employment contracts were signed before 1 January 2026, so they do not qualify for the exemption (which requires contracts dated on or after 1 January 2026). The business plans to hire 2 new front counter/online order staff from November 2026 at approximately RM1,900/month each — these new contracts will be dated after 1 January 2026 and will qualify for the stamp duty exemption. The exemption is small in monetary terms (RM10 per contract) but applies automatically.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "Employment contract salary must be RM3,000/month or below",
+          "field": "employment_contract_salary",
+          "status": "pass",
+          "detail": "3 existing employees earn at or below RM3,000/month: E005 (RM2,000), E006 (RM1,900), E007 (RM1,800). Additionally, 2 planned new hires from November 2026 at ~RM1,900/month each will also qualify."
+        },
+        {
+          "rule": "Employment contract must be dated on or after 1 January 2026",
+          "field": "contract_date",
+          "status": "pass",
+          "detail": "The 2 planned new hires (from November 2026) will have contracts dated after 1 January 2026, qualifying for the exemption. The 3 existing employees (E005, E006, E007) have contracts dated before 2026 (joined 2023-2025) and do not qualify for the exemption. However, if any existing unstamped contracts are submitted for stamping after 1 January 2026, the exemption may apply — the owner should consult LHDN or their accountant."
+        }
+      ],
+      "estimated_benefit": "Approximately RM20 in stamp duty savings for the 2 planned new hires (RM10 per contract x 2 contracts). If the owner also stamps the 3 existing qualifying employees' contracts now, an additional RM30 could be saved (subject to LHDN confirmation that contracts signed before 2026 can still benefit from the exemption when stamped after the effective date).",
+      "is_one_time_grant": false,
+      "what_is_needed": [
+        "When hiring 2 new staff from November 2026, ensure employment contracts are dated on or after 1 January 2026.",
+        "Submit contracts for stamping with LHDN — the exemption applies automatically for salaries at or below RM3,000/month.",
+        "Consult LK Tan & Associates or LHDN about whether the 3 existing qualifying employees' contracts (signed before 2026) can still be stamped under the exemption."
+      ],
+      "priority": "low"
+    },
+    {
+      "measure_id": "M6",
+      "measure_name": "GGSM4 financing guarantee",
+      "eligibility_status": "needs_info",
+      "eligibility_reason": "Lina's Bakery meets most criteria for the GGSM4 financing guarantee: 100% Malaysian-owned (exceeds 51% requirement), SSM-registered under the Companies Act 2016, annual sales of RM824,300 (well under the RM20 million services threshold), and classified as an SME (PMKS). The business could use this guarantee for working capital and capital expenditure (e.g., the planned RM45,000 deck oven purchase). However, GGSM4 is targeted at specific focus sectors: Bumiputera, Halal, Tourism, and High Growth High Value sectors. Food & Beverage is not explicitly listed. The business could qualify if it holds Halal certification (placing it in the 'Halal' focus sector) or if shareholders are Bumiputera (placing it in the 'Bumiputera' focus sector) — but both are currently unknown. If neither applies, the business may still be eligible for other SJPP schemes (SJMK, etc.) with lower maximum amounts (RM10 million) and broader sector coverage, but those are separate schemes from GGSM4.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "At least 51% of shares held by Malaysian citizens",
+          "field": "ownership_malaysian",
+          "status": "pass",
+          "detail": "Business is 100% Malaysian-owned (both shareholders are Malaysian nationals). Exceeds the 51% requirement."
+        },
+        {
+          "rule": "Registered under SSM, Companies Act 2016, or LLP Act 2012",
+          "field": "registration",
+          "status": "pass",
+          "detail": "Registered with SSM under the Companies Act 2016 (reg. no. 202301009876 / 1504321-T)."
+        },
+        {
+          "rule": "Services: sales not exceeding RM20 million OR no more than 75 full-time employees",
+          "field": "sales_threshold",
+          "status": "pass",
+          "detail": "Annual sales of RM824,300 (well under RM20 million) and 8 full-time employees (well under 75). Lina's Bakery is in the services/other sector (Food & Beverage), not manufacturing."
+        },
+        {
+          "rule": "Focus sectors: Bumiputera, Halal, Tourism, or HGHV sectors",
+          "field": "sector",
+          "status": "needs_info",
+          "detail": "Business sector is Food & Beverage, which is not explicitly listed as a focus sector. Could qualify under 'Halal' if the business holds Halal certification (unknown — not mentioned in any document). Could qualify under 'Bumiputera' if shareholders are Bumiputera (unknown — Bumiputera status is null in the profile). The business does not appear to fall under Tourism or any HGHV sector (semiconductor, advanced manufacturing, digital and AI, aerospace, green technology, medical devices)."
+        },
+        {
+          "rule": "Open to SMEs (PMKS) and mid-tier companies (MTC) owned by Malaysians",
+          "field": "recipient_type",
+          "status": "pass",
+          "detail": "Lina's Bakery is an SME (PMKS): sales under RM20 million, 8 employees, 100% Malaysian-owned."
+        },
+        {
+          "rule": "Guarantee is for working capital and capital expenditure",
+          "field": "purpose",
+          "status": "pass",
+          "detail": "The business plans to purchase a second deck oven (~RM45,000) — this is capital expenditure. Working capital for daily operations and the planned hiring of 2 additional staff also qualifies."
+        },
+        {
+          "rule": "Sole proprietorships and partnerships subject to lower maximum of RM1 million",
+          "field": "sole_proprietorship_max_amount",
+          "status": "pass",
+          "detail": "Not applicable — Lina's Bakery is a Sdn. Bhd. (company), not a sole proprietorship or partnership. The full RM20 million maximum applies (though the business's actual financing need is much smaller, ~RM45,000-100,000)."
+        }
+      ],
+      "estimated_benefit": "If eligible: government guarantee of up to 80% of financing amount, significantly improving access to bank loans and reducing collateral requirements. For the planned RM45,000 deck oven purchase, the guarantee would cover up to RM36,000 (80%). The business pays a guarantee fee of 0.75% per annum (minimum RM500). Actual monetary benefit = access to financing that might otherwise be unavailable or require more collateral. Not a direct cash grant.",
+      "is_one_time_grant": false,
+      "what_is_needed": [
+        "Confirm whether the business holds Halal certification (would qualify under the 'Halal' focus sector).",
+        "Confirm Bumiputera status of shareholders — IC copies needed (owner will provide). If either shareholder is Bumiputera, the business qualifies under the 'Bumiputera' focus sector.",
+        "If neither Halal nor Bumiputera applies, ask the bank about other SJPP schemes (SJMK, etc.) which cover broader sectors with a RM10 million cap.",
+        "Prepare 1-2 years of financial statements (FY2025 management accounts available; FY2024 may need to be compiled).",
+        "Prepare 6-12 months of bank statements (Aug 2026 available; gather Sep 2026 and preceding months).",
+        "Apply through a participating bank (22 financial institutions participate). Inform the bank officer about GGSM4 or other SJPP schemes.",
+        "Application period open until 31 December 2026 or until allocation is fully utilised."
+      ],
+      "priority": "medium"
+    },
+    {
+      "measure_id": "2027-a",
+      "measure_name": "Budget 2027 MSME tax cut",
+      "eligibility_status": "eligible",
+      "eligibility_reason": "Lina's Bakery meets the SME criteria for the proposed Budget 2027 tax rate reduction: paid-up capital of RM100,000 (under RM2.5 million) and gross business income of RM824,300 (under RM50 million). When this measure takes effect (expected YA 2027), the business would benefit from a 1 percentage point reduction on the first RM600,000 of taxable income (15% to 14% on first RM150,000; 17% to 16% on RM150,001-RM600,000). Based on current PBT of RM93,500, this would save approximately RM935/year. Note: this measure was announced in Budget 2027 on 9 October 2026 and is not yet in force — implementation details are pending from LHDN/MOF.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "Paid-up capital not more than RM2.5 million",
+          "field": "paid_up_capital",
+          "status": "pass",
+          "detail": "Paid-up capital is RM100,000, well under the RM2.5 million threshold."
+        },
+        {
+          "rule": "Gross business income not more than RM50 million",
+          "field": "gross_business_income",
+          "status": "pass",
+          "detail": "Gross business income is RM824,300, well under the RM50 million threshold."
+        }
+      ],
+      "estimated_benefit": "Approximately RM935/year from YA 2027 onwards (based on current PBT of RM93,500 at 1% reduction on the 15% band). If the business grows and taxable income reaches RM150,000: savings of RM1,500/year (1% x RM150,000). At maximum (taxable income of RM600,000+): up to RM6,000/year (1% x RM150,000 + 1% x RM450,000).",
+      "is_one_time_grant": false,
+      "what_is_needed": [
+        "Wait for implementation details from LHDN/MOF after Budget 2027 announcement (9 October 2026).",
+        "Expected to apply from YA 2027 via self-assessment tax filing — reduced rates applied automatically based on SME status.",
+        "No separate application anticipated — file annual tax return as usual."
+      ],
+      "priority": "low"
+    },
+    {
+      "measure_id": "2027-b",
+      "measure_name": "Budget 2027 minimum wage rise",
+      "eligibility_status": "not_eligible",
+      "eligibility_reason": "This measure raises the minimum wage from RM1,700 to RM2,000/month, effective June 2027, but applies only to employers with annual sales of RM50 million or above. MSMEs with annual sales below RM50 million are explicitly exempted. Lina's Bakery has annual sales of RM824,300 — well below the RM50 million threshold — so the business is exempt from the revised minimum wage rate. This is a favorable outcome: the business is not required to raise wages to RM2,000/month. Note: 2 of the 8 current employees (E006: RM1,900 and E007: RM1,800) earn below RM2,000/month, and the 2 planned new hires are at RM1,900/month — but since the business is exempt, no wage adjustments are required.",
+      "rule_by_rule_evaluation": [
+        {
+          "rule": "Applies to employers with annual sales of RM50 million or above; MSMEs below RM50 million are exempt",
+          "field": "annual_sales",
+          "status": "fail",
+          "detail": "Lina's Bakery has annual sales of RM824,300, which is well below the RM50 million threshold. The business is classified as an MSME and is explicitly exempted from the revised minimum wage rate. This means the 'fail' status here is actually a favorable outcome — the business does not need to comply with the RM2,000 minimum wage."
+        }
+      ],
+      "estimated_benefit": "None — the business is exempt. This is a favorable outcome: the business is NOT required to raise any employee salaries to RM2,000/month. If the business WERE subject to this measure, the cost would be approximately RM3,600/year (raising E006 from RM1,900 to RM2,000 = RM100/month, and E007 from RM1,800 to RM2,000 = RM200/month, totaling RM300/month x 12 months).",
+      "is_one_time_grant": false,
+      "what_is_needed": [],
+      "priority": "low"
+    }
+  ],
+  "summary": {
+    "total_estimated_yearly_benefit": 8795,
+    "total_estimated_yearly_benefit_breakdown": [
+      {
+        "measure_id": "M3",
+        "measure_name": "SME income tax rates",
+        "estimated_yearly_benefit_myr": 8415,
+        "note": "Tax savings from tiered SME rates (15% on first RM150k) vs flat 24% rate, based on FY2025 PBT of RM93,500."
+      },
+      {
+        "measure_id": "M4",
+        "measure_name": "E-invoicing special deduction",
+        "estimated_yearly_benefit_myr": 360,
+        "note": "Tax savings from deducting RM2,400 e-invoicing module cost at 15% marginal rate. Potential up to RM7,500/year if RM50,000 in ESG expenses claimed."
+      },
+      {
+        "measure_id": "M5",
+        "measure_name": "Stamp duty exemption on employment contracts",
+        "estimated_yearly_benefit_myr": 20,
+        "note": "RM10 stamp duty saved per qualifying new employment contract. 2 new hires planned from November 2026 at RM1,900/month each."
+      }
+    ],
+    "total_estimated_one_time_benefit": "Up to RM5,000 (pending confirmation of previous grant status for M1). If the business previously received a digitalisation grant, the one-time benefit is reduced to RM1,200 (e-invoicing portion only).",
+    "total_estimated_one_time_benefit_breakdown": [
+      {
+        "measure_id": "M1",
+        "measure_name": "Geran Digital PMKS MADANI",
+        "estimated_one_time_benefit_myr": "RM4,000 (50% of RM8,000 KedaiDigital quotation, under RM5,000 cap) if no prior grant received; RM1,200 (50% of RM2,400 e-invoicing module only) if prior grant was received.",
+        "status": "needs_info"
+      }
+    ],
+    "future_benefits": [
+      {
+        "measure_id": "2027-a",
+        "measure_name": "Budget 2027 MSME tax cut",
+        "potential_benefit": "Approximately RM935/year from YA 2027 (based on current PBT of RM93,500). Potential up to RM6,000/year if taxable income reaches RM600,000.",
+        "eligibility": "eligible (meets SME criteria)",
+        "effective_date": "Expected YA 2027 (not yet in force)",
+        "note": "Announced in Budget 2027 on 9 October 2026. Implementation details pending from LHDN/MOF. NOT included in current totals."
+      },
+      {
+        "measure_id": "2027-b",
+        "measure_name": "Budget 2027 minimum wage rise",
+        "potential_benefit": "N/A — business is exempt (annual sales below RM50 million). Favorable outcome: no wage increase required.",
+        "eligibility": "not_eligible (exempt as MSME)",
+        "effective_date": "June 2027 (not yet in force)",
+        "note": "If the business WERE subject to this, the cost would be ~RM3,600/year. Being exempt is a cost saving. NOT included in totals."
+      }
+    ],
+    "eligible_measures": ["M3", "M4", "M5", "2027-a"],
+    "needs_info_measures": ["M1", "M6"],
+    "not_eligible_measures": ["M2", "2027-b"],
+    "top_3_priorities": [
+      {
+        "rank": 1,
+        "measure_id": "M1",
+        "measure_name": "Geran Digital PMKS MADANI",
+        "action": "Confirm with the owner whether the business previously received any digitalisation matching grant (Geran Padanan Pendigitalan). If not, apply immediately through Funding Society for up to RM4,000 in matching grant (50% of the RM8,000 KedaiDigital quotation). The quotation is already in hand and the vendor can assist with the application. This is the largest immediate financial benefit available.",
+        "potential_benefit": "Up to RM5,000 one-time grant (estimated RM4,000 based on current quotation)",
+        "priority": "high"
+      },
+      {
+        "rank": 2,
+        "measure_id": "M6",
+        "measure_name": "GGSM4 financing guarantee",
+        "action": "Confirm whether the business holds Halal certification or whether shareholders are Bumiputera. If yes, apply through a participating bank for the GGSM4 guarantee to secure financing for the planned RM45,000 deck oven purchase. If neither applies, ask the bank about other SJPP schemes (SJMK, etc.) with broader sector coverage. Application period open until 31 December 2026.",
+        "potential_benefit": "Up to 80% government guarantee on financing, enabling access to loans for the deck oven purchase with reduced collateral requirements",
+        "priority": "medium"
+      },
+      {
+        "rank": 3,
+        "measure_id": "M4",
+        "measure_name": "E-invoicing special deduction",
+        "action": "Proceed with implementing the e-invoicing module from KedaiDigital (RM2,400, already quoted). Claim the cost as a tax deduction in the YA 2026 tax return via accountant LK Tan & Associates. Keep all invoices and receipts as supporting documentation. Consider whether other ESG-related expenses can be claimed to maximize the deduction (up to RM50,000/year).",
+        "potential_benefit": "RM360/year in tax savings (based on RM2,400 e-invoicing cost at 15% marginal rate). Up to RM7,500/year if RM50,000 in ESG expenses claimed.",
+        "priority": "medium"
+      }
+    ]
+  }
+}

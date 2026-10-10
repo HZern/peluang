@@ -1,0 +1,281 @@
+{
+  "profiler_run": {
+    "run_date": "2026-10-11",
+    "business_folder": "lina-bakery",
+    "documents_read": [
+      "Bank_Statement_Aug2026.pdf",
+      "Business_Profile.docx",
+      "Electricity_Bill_Sep2026.pdf",
+      "Email_from_Lina.txt",
+      "Management_Accounts_FY2025.pdf",
+      "Payroll_Summary_Aug2026.xlsx",
+      "Quotation_KedaiDigital_QT-2026-0917.pdf",
+      "SSM_Company_Profile.pdf"
+    ]
+  },
+  "business_name": "Lina's Bakery Sdn. Bhd.",
+  "entity_type": "company",
+  "entity_type_detail": "Private company limited by shares (Sdn. Bhd.)",
+  "registration_number": "202301009876 (1504321-T)",
+  "date_incorporated": "2023-03-14",
+  "paid_up_capital": {
+    "amount_myr": 100000.00,
+    "number_of_shares": 100000,
+    "share_type": "ordinary shares"
+  },
+  "ownership_malaysian": 100,
+  "ownership_bumiputera": null,
+  "bumiputera_note": "Bumiputera status is not explicitly stated in any document. Both shareholders are identified as Malaysian nationals in the SSM profile, but no race or Bumiputera status is mentioned.",
+  "shareholders": [
+    {
+      "name": "Nur Lina binti Hassan",
+      "nationality": "Malaysian",
+      "shares_held": 70000,
+      "percentage": 70.0,
+      "designation": "Director"
+    },
+    {
+      "name": "Ahmad Faiz bin Rahman",
+      "nationality": "Malaysian",
+      "shares_held": 30000,
+      "percentage": 30.0,
+      "designation": "Director"
+    }
+  ],
+  "business_sector": "Food & Beverage",
+  "business_activity_description": "Manufacturing and retail of bread, cakes and pastries; catering of baked goods. Walk-in retail counter sales, birthday cake orders, and catering for clinics, offices and school events. Also sells through food delivery platforms.",
+  "nature_of_business_ssm": "Manufacturing and retail of bread, cakes and pastries; catering of baked goods",
+  "registered_address": "Suite 3-07, Wisma Prima, 15 Jalan Kenari 4, 47100 Puchong, Selangor",
+  "business_address": "No. 18G, Jalan Harmoni 3/2, Taman Harmoni, 47300 Petaling Jaya, Selangor",
+  "operating_period_months": 43,
+  "operating_period_note": "Calculated from incorporation date 14 March 2023 to October 2026 (approximately 43 months). Shop commenced operations on 1 June 2023.",
+  "number_of_employees": 8,
+  "employee_count_note": "8 full-time employees on payroll. The director (Nur Lina binti Hassan) is paid separately via director's fee and is not counted as an employee. Plan to hire 2 more front counter/online order staff from November 2026.",
+  "employee_salary_details": [
+    {
+      "emp_id": "E001",
+      "name": "Siti Aminah binti Yusof",
+      "position": "Head Baker",
+      "date_joined": "2023-06-01",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 3500.00
+    },
+    {
+      "emp_id": "E002",
+      "name": "Lim Mei Ling",
+      "position": "Pastry Chef",
+      "date_joined": "2023-06-01",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 3200.00
+    },
+    {
+      "emp_id": "E003",
+      "name": "Muhammad Hafiz bin Kamal",
+      "position": "Baker",
+      "date_joined": "2023-09-11",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 2600.00
+    },
+    {
+      "emp_id": "E004",
+      "name": "Rajesh a/l Kumar",
+      "position": "Baker",
+      "date_joined": "2024-02-05",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 2500.00
+    },
+    {
+      "emp_id": "E005",
+      "name": "Nurul Izzah binti Ahmad",
+      "position": "Cashier / Front Counter",
+      "date_joined": "2023-06-01",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 2000.00
+    },
+    {
+      "emp_id": "E006",
+      "name": "Chong Wei Jie",
+      "position": "Front Counter",
+      "date_joined": "2024-07-15",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 1900.00
+    },
+    {
+      "emp_id": "E007",
+      "name": "Aisyah binti Rosli",
+      "position": "Kitchen Assistant",
+      "date_joined": "2025-03-03",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 1800.00
+    },
+    {
+      "emp_id": "E008",
+      "name": "Kavitha a/p Muniandy",
+      "position": "Packing & Delivery Coordinator",
+      "date_joined": "2024-11-18",
+      "nationality": "Malaysian",
+      "monthly_basic_salary_myr": 2100.00
+    }
+  ],
+  "payroll_summary": {
+    "total_monthly_basic_salaries_myr": 19600.00,
+    "total_monthly_net_pay_myr": 17306.80,
+    "total_monthly_employer_cost_myr": 22530.20,
+    "director_monthly_fee_myr": 4000.00,
+    "director_fee_note": "Director's fee for Nur Lina binti Hassan paid separately, not part of payroll.",
+    "hiring_plan": "2 more front counter / online order staff from November 2026, approximately RM1,900 each."
+  },
+  "average_annual_sales": {
+    "amount_myr": 824300.00,
+    "source": "Management Accounts FY2025 (unaudited)",
+    "note": "Lina's Business Profile states approximately RM820k for 2025 and around RM70k/month currently."
+  },
+  "gross_business_income": {
+    "amount_myr": 824300.00,
+    "source": "Management Accounts FY2025 total revenue",
+    "revenue_breakdown": {
+      "retail_counter_sales_myr": 548600.00,
+      "catering_and_bulk_orders_myr": 212400.00,
+      "food_delivery_platform_sales_myr": 63300.00
+    }
+  },
+  "financial_summary_fy2025": {
+    "total_revenue_myr": 824300.00,
+    "total_cost_of_sales_myr": 267800.00,
+    "gross_profit_myr": 556500.00,
+    "total_operating_expenses_myr": 463000.00,
+    "profit_before_taxation_myr": 93500.00,
+    "total_assets_myr": 188900.00,
+    "total_liabilities_myr": 64100.00,
+    "total_equity_myr": 124800.00,
+    "share_capital_myr": 100000.00,
+    "retained_earnings_myr": 24800.00
+  },
+  "has_previous_digitalisation_grant": "unknown",
+  "previous_grant_note": "Lina states in Business_Profile.docx: 'Not sure. I think we got something during COVID? I need to check with my husband.' This needs confirmation from the owner.",
+  "existing_digital_tools": [
+    {
+      "tool": "Card terminal (EDC)",
+      "description": "Credit/debit card payment terminal — daily settlement transactions visible in bank statement"
+    },
+    {
+      "tool": "QR payment (DuitNow QR or similar)",
+      "description": "QR code payment acceptance — daily settlement transactions visible in bank statement"
+    },
+    {
+      "tool": "Food delivery platform",
+      "description": "Listed on food delivery platform(s) — payout settlements visible in bank statement (~8% of sales per Business Profile)"
+    },
+    {
+      "tool": "Internet banking (IBG / FPX)",
+      "description": "Uses IBG for supplier payments and FPX for internet/phone bill payments"
+    },
+    {
+      "tool": "JomPAY",
+      "description": "Uses JomPAY for electricity and water bill payments"
+    }
+  ],
+  "digital_tools_not_in_use": [
+    "No POS system mentioned",
+    "No accounting software mentioned (uses external accountant LK Tan & Associates)",
+    "No e-invoicing system in place",
+    "No online ordering website"
+  ],
+  "has_quotation_for_digital_service": true,
+  "quotation_details": {
+    "provider": "KedaiDigital Solutions Sdn. Bhd.",
+    "quotation_number": "QT-2026-0917",
+    "date": "2026-09-18",
+    "quoted_to": "Lina's Bakery Sdn. Bhd.",
+    "attention": "Puan Nur Lina binti Hassan",
+    "total_amount_myr": 8000.00,
+    "sst": "Not charged",
+    "line_items": [
+      {
+        "description": "Online ordering website with menu, cart and WhatsApp order notifications (12-month subscription, hosting included)",
+        "qty": 1,
+        "amount_myr": 4800.00
+      },
+      {
+        "description": "E-invoicing module compatible with the national e-invoicing system (12-month subscription, up to 300 invoices/month)",
+        "qty": 1,
+        "amount_myr": 2400.00
+      },
+      {
+        "description": "One-time setup: menu and photo upload, payment gateway linking, 2-hour staff training",
+        "qty": 1,
+        "amount_myr": 800.00
+      }
+    ],
+    "terms": [
+      "Valid for 30 days from date of quotation",
+      "Payment: 50% on confirmation, 50% on go-live",
+      "Go-live within 3 weeks of confirmation",
+      "Vendor can assist with government digitalisation grant applications"
+    ]
+  },
+  "electricity_bill_amount": {
+    "amount_myr": 1900.30,
+    "billing_period": "02/09/2026 – 01/10/2026 (30 days)",
+    "provider": "Utiliti Elektrik Sejahtera",
+    "usage_kwh": 4284,
+    "tariff": "Commercial, low voltage",
+    "previous_bill_aug2026_myr": 1884.30,
+    "previous_bill_status": "Paid on 09/09/2026"
+  },
+  "bank_statement_summary": {
+    "bank": "Bank Seri Murni Berhad",
+    "account_holder": "LINA'S BAKERY SDN. BHD.",
+    "account_type": "Business Current Account",
+    "currency": "MYR",
+    "period": "01/08/2026 – 31/08/2026",
+    "opening_balance_myr": 52340.55,
+    "total_debits_myr": 62458.11,
+    "total_credits_myr": 77087.90,
+    "closing_balance_myr": 66970.34,
+    "approximate_monthly_inflow_myr": 77087.90,
+    "approximate_monthly_outflow_myr": 62458.11,
+    "key_observations": [
+      "Daily card terminal and QR payment settlements indicating active retail operations",
+      "Food delivery platform payouts received approximately every 7 days",
+      "Major suppliers: Syarikat Tepung Jaya (flour), Dairy Fresh Supplies, Telur Segar Enterprise (eggs), Pekat Packaging",
+      "Rent payment to Harmoni Properties: RM4,800/month",
+      "Payroll credit to 8 staff: RM17,306.80 on 26/08/2026",
+      "EPF (KWSP) employer contribution: RM4,704.00",
+      "SOCSO/EIS contribution: RM519.40",
+      "Director fee to Nur Lina binti Hassan: RM4,000.00",
+      "Standing instruction for hire purchase (deck oven): RM1,150.00/month",
+      "Catering revenue from corporate clients: Medivista Clinic (RM4,200 + RM1,850), Aras Kreatif Events (RM3,100), Sekolah Sri Harmoni PIBG (RM4,200)"
+    ]
+  },
+  "company_secretary": "Prima Corporate Services Sdn. Bhd.",
+  "accountant": "LK Tan & Associates",
+  "other_companies_owned": "None — confirmed in Business Profile",
+  "future_plans": {
+    "hiring": "2 additional front counter / online order staff from November 2026 (approximately RM1,900 each)",
+    "equipment": "Potential purchase of second deck oven (~RM45,000) if financing can be secured",
+    "digitalisation": "Online ordering website and e-invoicing module (KedaiDigital quotation RM8,000)"
+  },
+  "any_open_questions": [
+    {
+      "question": "Bumiputera status",
+      "detail": "Not explicitly stated in any document. Both shareholders are Malaysian nationals but no race or Bumiputera status is mentioned. IC copies will be provided by the owner when actually applying."
+    },
+    {
+      "question": "Previous COVID-era grants",
+      "detail": "Lina is uncertain: 'Not sure. I think we got something during COVID? I need to check with my husband.' This affects grant eligibility for programs that exclude prior recipients."
+    },
+    {
+      "question": "Identity document (IC) copies",
+      "detail": "Lina states she will provide IC copies herself when actually applying. These are needed for grant applications that require Bumiputera status verification."
+    },
+    {
+      "question": "Existing accounting/POS software",
+      "detail": "No mention of any dedicated POS or accounting software in the documents. The business uses an external accountant (LK Tan & Associates). Need to confirm if any software is in use."
+    },
+    {
+      "question": "Grant budget alignment",
+      "detail": "Lina asks specifically about Budget 2026 grants. Need to match business profile against current Malaysian SME digitalisation grant schemes."
+    }
+  ]
+}
